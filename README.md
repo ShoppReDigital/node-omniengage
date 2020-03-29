@@ -34,6 +34,10 @@ npm i @shoppre/omniengage -S
 ##  for sending emails from nodejs
 
 ```js
+if (!process.env.OMNILOGIN_URL) {
+  process.env.OMNILOGIN_URL = 'https://engage.yourdomain.com';
+}
+
 const { ses } = require('@shoppre/omniengage');
 const { FROM_EMAIL = 'you@example.com' } = process.env;
 const customer = {
