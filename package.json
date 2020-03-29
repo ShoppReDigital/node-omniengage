@@ -1,6 +1,6 @@
 {
   "name": "@shoppre/omniengage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Email with AWS SES or ShoppRe SES, Chat with Socket.io, WhatsApp, OneSignal, Firebase Cloud Messaging, Email Preferences",
   "main": "index.js",
   "directories": {

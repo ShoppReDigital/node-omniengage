@@ -19,7 +19,7 @@ npm i @shoppre/omniengage -S
 
 ## Usage
 
-### for building emails
+### for building emails for developers in command line
 ```json
 {
  "scripts": {
@@ -31,4 +31,23 @@ npm i @shoppre/omniengage -S
 }
 ```
 
-## 
+##  for sending emails from nodejs
+
+```js
+const { ses } = require('@shoppre/omniengage');
+const { FROM_EMAIL = 'you@example.com' } = process.env;
+const customer = {
+  email: 'customer@gmail.com',
+};
+
+ses.sendTemplatedEmail({
+    Source: `"OmniEngage" <${FROM_EMAIL}>`,
+    Destination: {
+      ToAddresses: [customer.email],
+    },
+    Template: 'user_signup',
+    TemplateData: JSON.stringify({
+      customer,
+    }),
+  })
+```
