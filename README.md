@@ -23,10 +23,10 @@ npm i @shoppre/omniengage -S
 ```json
 {
  "scripts": {
-    "event:fire": "./node_modules/.bin/omniengage events",
-    "email-build": "./node_modules/.bin/omniengage build",
-    "email-update-send": "./node_modules/.bin/omniengage update-send",
-    "email-deploy": "DEBUG=q-* ./node_modules/.bin/omniengage deploy"
+    "event:fire": "OMNIENGAGE_URL=https://engage.yourdomain.com ./node_modules/.bin/omniengage events",
+    "email-build": "OMNIENGAGE_URL=https://engage.yourdomain.com ./node_modules/.bin/omniengage build",
+    "email-update-send": "OMNIENGAGE_URL=https://engage.yourdomain.com ./node_modules/.bin/omniengage update-send",
+    "email-deploy": "OMNIENGAGE_URL=https://engage.yourdomain.com DEBUG=q-* ./node_modules/.bin/omniengage deploy"
   }
 }
 ```
