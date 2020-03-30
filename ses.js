@@ -2,7 +2,7 @@
 exports.createTemplate = (payload) => {
     rp({
         method: 'POST',
-        url: `${process.env.OMNIENGAGE_URL}/api/ses/sendTemplatedEmail`,
+        url: `${process.env.OMNIENGAGE_URL}/api/ses/createTemplate`,
         json: true,
         body: payload,
     })
@@ -11,7 +11,7 @@ exports.createTemplate = (payload) => {
 exports.updateTemplate = (payload) => {
     rp({
         method: 'POST',
-        url:`${process.env.OMNIENGAGE_URL}/api/ses/sendTemplatedEmail`,
+        url:`${process.env.OMNIENGAGE_URL}/api/ses/updateTemplate`,
         json: true,
         body: payload,
     })

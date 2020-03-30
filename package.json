@@ -1,6 +1,6 @@
 {
   "name": "@shoppre/omniengage",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Email with AWS SES or ShoppRe SES, Chat with Socket.io, WhatsApp, OneSignal, Firebase Cloud Messaging, Email Preferences",
   "main": "index.js",
   "directories": {
@@ -9,6 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npm publish --access public"
+  },
+  "bin" : {
+    "omniengage" : "command.js"
   },
   "repository": {
     "type": "git",
