@@ -8,19 +8,47 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npm publish --access public"
+    "release": "npm publish --access public",
+    "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
+    "validate": "npm ls"
   },
-  "bin" : {
-    "omniengage" : "command.js"
+  "bin": {
+    "omniengage": "command.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shoppre/node-omniengage.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vikas Kumar <vikas@shoppre.com>",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/shoppre/node-omniengage/issues"
   },
-  "homepage": "https://github.com/shoppre/node-omniengage#readme"
+  "homepage": "https://github.com/shoppre/node-omniengage#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "handlebars": "^4.7.3",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.12.1",
+    "nyc": "^11.8.0",
+    "precommit-hook": "^3.0.0",
+    "supertest": "^3.0.0"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }

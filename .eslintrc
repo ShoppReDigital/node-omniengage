@@ -1,0 +1,48 @@
+{
+
+  "extends": [
+    "airbnb/base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": { "modules": true }
+  },
+  "rules": {
+    "no-underscore-dangle": [0],
+    //    "no-label": [0],
+    //    "no-empty-label": [0],
+    "new-cap": [2, {"capIsNewExceptions": [
+      "express.Router",
+      "DataTypes.STRING",
+      "DataTypes.CHAR",
+      "DataTypes.TEXT",
+      "DataTypes.INTEGER",
+      "DataTypes.BIGINT",
+      "DataTypes.FLOAT",
+      "DataTypes.REAL",
+      "DataTypes.DOUBLE",
+      "DataTypes.DECIMAL",
+      "DataTypes.BOOLEAN",
+      "DataTypes.TIME",
+      "DataTypes.DATE",
+      "DataTypes.DATEONLY",
+      "DataTypes.HSTORE",
+      "DataTypes.JSON",
+      "DataTypes.JSONB",
+      "DataTypes.NOW",
+      "DataTypes.BLOB",
+      "DataTypes.RANGE",
+      "DataTypes.UUID",
+      "DataTypes.UUIDV1",
+      "DataTypes.UUIDV4",
+      "DataTypes.VIRTUAL",
+      "DataTypes.ENUM",
+      "DataTypes.ARRAY"
+    ]}]
+  },
+  "globals": {
+    "Promise": true,
+    "io": true
+  }
+}
