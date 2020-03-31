@@ -9,12 +9,12 @@ You need to install OmniEngage and set API credentials before you get started
 If you not installed yet, you can install using below options
 
 1. [DigitalOcean One Click Installation](https://marketplace.digitalocean.com/apps/caprover?action=deploy&refcode=27013eb71a06)  
-2. [Installing by your own](https://github.com/shoppre-tech/omniengage#installing-omniengage---in-5-minutes)
+2. [Installing by your own](https://github.com/shoppredigital-tech/omniengage#installing-omniengage---in-5-minutes)
 
 ## Installation
 
 ```shell script
-npm i @shoppre/omniengage -S
+npm i @shoppredigital/omniengage -S
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ if (!process.env.OMNIENGAGE_URL) {
   process.env.OMNIENGAGE_URL = 'https://engage.yourdomain.com';
 }
 
-const { ses } = require('@shoppre/omniengage');
+const { ses } = require('@shoppredigital/omniengage');
 const { FROM_EMAIL = 'you@example.com' } = process.env;
 const customer = {
   email: 'customer@gmail.com',

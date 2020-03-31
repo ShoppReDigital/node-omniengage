@@ -1,5 +1,5 @@
 {
-  "name": "@shoppre/omniengage",
+  "name": "@shoppredigital/omniengage",
   "version": "0.0.9",
   "description": "Email with AWS SES or ShoppRe SES, Chat with Socket.io, WhatsApp, OneSignal, Firebase Cloud Messaging, Email Preferences",
   "main": "index.js",
@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shoppre/node-omniengage.git"
+    "url": "git+https://github.com/shoppredigital/node-omniengage.git"
   },
-  "author": "Vikas Kumar <vikas@shoppre.com>",
+  "author": "Vikas Kumar <vikas@shoppredigital.com>",
   "license": "Apache-2.0",
   "licenses": [
     {
@@ -28,9 +28,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/shoppre/node-omniengage/issues"
+    "url": "https://github.com/shoppredigital/node-omniengage/issues"
   },
-  "homepage": "https://github.com/shoppre/node-omniengage#readme",
+  "homepage": "https://github.com/shoppredigital/node-omniengage#readme",
   "dependencies": {
     "debug": "^4.1.1",
     "handlebars": "^4.7.3",
