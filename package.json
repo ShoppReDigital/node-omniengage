@@ -1,6 +1,6 @@
 {
   "name": "@shoppredigital/omniengage",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Email with AWS SES or ShoppRe SES, Chat with Socket.io, WhatsApp, OneSignal, Firebase Cloud Messaging, Email Preferences",
   "main": "index.js",
   "directories": {
@@ -37,11 +37,11 @@
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
+    "chai": "^3.2.0",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "mocha": "^5.1.1",
-    "chai": "^3.2.0",
     "nodemon": "^1.12.1",
     "nyc": "^11.8.0",
     "precommit-hook": "^3.0.0",

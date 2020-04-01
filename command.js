@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const log = require('debug')('@shoppre/engage/command.js');
 
 const required = require;
