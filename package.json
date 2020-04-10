@@ -1,15 +1,15 @@
 {
   "name": "@shoppredigital/omniengage",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Email with AWS SES or ShoppRe SES, Chat with Socket.io, WhatsApp, OneSignal, Firebase Cloud Messaging, Email Preferences",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npm publish --access public",
+    "test": "OMNIENGAGE_URL=http://localhost:7006 NODE_ENV=test nyc --reporter=text mocha --opts .mocharc lib/**/*.spec.js --exit | grep -v '100'",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./",
+    "release": "npm publish --access public",
     "validate": "npm ls"
   },
   "bin": {
@@ -34,6 +34,7 @@
   "dependencies": {
     "debug": "^4.1.1",
     "handlebars": "^4.7.3",
+    "request": "^2.88.2",
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
@@ -41,6 +42,8 @@
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
     "mocha": "^5.1.1",
     "nodemon": "^1.12.1",
     "nyc": "^11.8.0",

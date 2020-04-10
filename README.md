@@ -55,3 +55,23 @@ ses.sendTemplatedEmail({
     }),
   })
 ```
+
+```js
+const { comment, user } = require('@shoppredigital/omniengage');
+// Register a user 
+user.signup({
+      id: userId,
+      first_name: 'Vikas',
+      last_name: 'Kumar',
+      email: 'customer-email@gmail.com',
+    });
+
+// Sending Chat Message from Server
+comment.create({
+      object_id: 1,
+      user_id: userId,
+      state_id: 1,
+      comments: 'Lead Completed',
+    }, 'leads')
+```
+
